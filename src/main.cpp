@@ -33,3 +33,12 @@ void setup() {
  * 2. Prints force value on Serial Monitor
  * 3. Waits 500 milliseconds before next reading
  */
+void loop() {
+
+  fsrValue = analogRead(fsrPin);  ///< Read analog force value
+
+  Serial.print("Force Sensor Value: ");
+  Serial.println(fsrValue);
+
+  delay(500);
+}
